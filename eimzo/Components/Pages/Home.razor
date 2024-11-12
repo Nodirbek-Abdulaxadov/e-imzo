@@ -1,0 +1,23 @@
+﻿@page "/sign"
+@rendermode InteractiveServer
+
+<MudGrid Justify="Justify.Center">
+    <MudItem xs="12" lg="6">
+        <MudPaper Class="pa-5 mb-3">
+            <input type="hidden" id="stir"/>
+            <MudText Typo="Typo.h6">Select Cert</MudText>
+            <div class="form-group">
+                <select id="selectS" name="key" class="select-input" onchange="cbChanged(this)">
+                    <option disabled selected>-- Select cert --</option>
+                </select>
+            </div>
+            <MudButton Class="mt-3" FullWidth="true" OnClick="SignIn" Variant="Variant.Filled" Color="Color.Primary">Sign</MudButton>
+        </MudPaper>
+    </MudItem>
+</MudGrid>
+
+<MudContainer>
+    <MudText Style="word-wrap: break-word; overflow-wrap: break-word;">
+        @key
+    </MudText>
+</MudContainer>

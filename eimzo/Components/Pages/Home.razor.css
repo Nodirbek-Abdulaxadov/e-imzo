@@ -1,0 +1,18 @@
+﻿.form-group {
+    margin-bottom: 15px;
+}
+
+.select-input {
+    width: 100%;
+    padding: 8px;
+    font-size: 1rem;
+    border: 0.6px solid var(--mud-palette-divider);
+    border-radius: 4px;
+    transition: border-color 0.3s;
+}
+
+    .select-input:focus {
+        border-color: #007bff;
+        outline: none;
+        box-shadow: 0 0 3px rgba(0, 123, 255, 0.3);
+    }
